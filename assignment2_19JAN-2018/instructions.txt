@@ -1,0 +1,7 @@
+Execute the code using ./a.out <path of the directory in which database-19-jan.2018 is present>
+
+Two files will be output :
+course-credits-great40.csv (containing students having greater than 40 credits)
+
+exam-time-table-clash.csv (Containing students having clashes with the courses)
+
