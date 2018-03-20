@@ -329,7 +329,7 @@ int main (int c, char **v) {
         }
     }
 
-    FILE *fp4 =fopen("/home/arkadeep/Documents/database-19-jan-2018/exam-time-table.csv","r");
+    FILE *fp4 =fopen("./database-19-jan-2018/exam-time-table.csv","r");
     char name_course[200],date[200],start[200],end[200];
 
     // if(!fp4) return;
