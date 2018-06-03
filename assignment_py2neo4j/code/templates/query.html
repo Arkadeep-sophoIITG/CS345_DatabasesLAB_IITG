@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link href="static/css/card.css" rel="stylesheet">
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+
+
+<!-- Team -->
+<section id="team" class="pb-5">
+    <div class="container">
+
+        <h5 class="section-title h1">Cassandra Assignment</h5>
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Query 8</h4>
+                                    <p class="card-text">Given a date 2018-01-15, find all active userIDs on that date.
+                                        An user is said
+                                        to be active on a given data if he has posted a tweet on that date </p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Query 1</h4>
+                                    <p class="card-text"> Sort the
+                                        userIDs in decreasing order of frequency. Your output should include the
+                                        following:
+                                        Date ±UserID ±Number of times the userID has posted a tweet on that date</p>
+                                    <div class="col-12">
+                                        <button id="submitq1" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#modal1" type="button" onclick="setter(1)">Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Query 3</h4>
+                                    <p class="card-text">Given a date, 2018-01-15 find all co-occurring hashtag-mention
+                                        pairs. A
+                                        hashtag and mention is said to be a co-occurring pair if they co-appear in the
+                                        same tweet. </p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Query 2</h4>
+                                    <p class="card-text">Sort your output in decreasing order of frequency. Your output
+                                        should include the following:
+                                        Date - (hashtag-mention) - Number of times the hashtag-mention pair is
+                                        cooccurring
+                                        on this date</p>
+                                    <div class="col-12">
+                                        <button id="submitq2" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#modal1" type="button" onclick="setter(2)">Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Query 3</h4>
+                                    <p class="card-text">Given a hashtag, retrieve all tweets containing the hashtag and
+                                        sort them in
+                                        decreasing order of date and time.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Query 3</h4>
+                                    <p class="card-text">Table tweetsTimelinehash is used for this purpose
+                                        with partiton key as hashtag and datetime (in descending order),tid as
+                                        clustering keys </p>
+                                    <div class="col-12">
+                                        <button id="submitq3" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#modal1" type="button" onclick="setter(3)">Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_04.jpg"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Query 4</h4>
+                                    <p class="card-text">Given an author name, retrieve all tweets that mentions the
+                                        author. Sort them
+                                        in decreasing order of date and time.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Query 4</h4>
+                                    <p class="card-text">Sort them
+                                        in decreasing order of date and time.</p>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" data-toggle="modal"
+                                                data-target="#modal1" type="button" onclick="setter(4)">Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Query 5</h4>
+                                    <p class="card-text">Retrieve all tweets of a particular date sorted in decreasing
+                                        order of their
+                                        popularity where popularity is based on like count of the tweet.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Query 5</h4>
+                                    <p class="card-text">TweetsTimelinedate is used for this purpose with date as
+                                        partition key and
+                                        clustering keys as like_count (in desc order) and tid .</p>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" data-toggle="modal"
+                                                data-target="#modal1" type="button" onclick="setter(5)">Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_06.jpg"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Query 6</h4>
+                                    <p class="card-text">Retrieve all tweets from a given location</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Query 6</h4>
+                                    <p class="card-text">TweetsTimelineloc is used for this purpose with location as
+                                        partition key and
+                                        clustering key as tid(in asc order) .</p>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" data-toggle="modal"
+                                                data-target="#modal1" type="button" onclick="setter(6)">Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Query 7</h4>
+                                    <p class="card-text">Given a date, retrieve top 20 popular hashtags over the last 7
+                                        days. </p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Query 7</h4>
+                                    <p class="card-text">The
+                                        popularity of a hashtag is determined by its frequency of occurrence over the
+                                        said period.</p>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" data-toggle="modal"
+                                                data-target="#modal1" type="button" onclick="setter(7)">Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"
+                                            src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png"
+                                            alt="card image"></p>
+                                    <h4 class="card-title">Query 8</h4>
+                                    <p class="card-text">Given a date, delete all tweets posted on that day.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Query 8</h4>
+                                    <p class="card-text">All tweets are deleted having date as given in the input</p>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" data-toggle="modal"
+                                                data-target="#modal1" type="button" onclick="setter(8)">Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+
+        </div>
+    </div>
+</section>
+<!-- Team -->
+<div id="modal1" class="modal fade" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Query1</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="input-group">
+                        <label for="name">Enter Input </label>
+                        <input type="text" id="name1" name="name1" class="form-control" placeholder="Enter Input">
+                    </div>
+                    <p class="text-center">
+                        <button type="button" id="btn31" name="btn31" data-dismiss="modal" class="btn btn-success">
+                            Submit
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="here1"></div>
+<div id="queryOutput"></div>
+
+</body>
+</html>
+
+</div>
+</html>
+
+<script type="text/javascript">
+    var outtable = "{{ output|safe }}";
+    $('#queryOutput').html(outtable);
+    var whichone = 0;
+    console.log(outtable);
+    $('#btn31').click(function () {
+        $('#here1').html('<form id="form11" action="/" method="POST"><input type="text" name="name" id="name" value="' + $('#name1').val() + '"/><input type="text" name="index" id="index" value="' + whichone + '"/></form>');
+        $('#form11').submit();
+        $('#here1').html();
+
+    });
+
+    function setter(index) {
+        whichone = index;
+    }
+</script>

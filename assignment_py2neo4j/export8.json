@@ -1,0 +1,185 @@
+{
+    "keys": [
+      "u",
+      "h",
+      "collect(t.tid)",
+      "count(*)"
+    ],
+    "length": 4,
+    "_fields": [
+      {
+        "identity": {
+          "low": 81417,
+          "high": 0
+        },
+        "labels": [
+          "Users"
+        ],
+        "properties": {
+          "author_id": {
+            "low": 429142017,
+            "high": 168121420
+          },
+          "author": "Nichola L Stephenson",
+          "author_screen_name": "nickystevo"
+        }
+      },
+      {
+        "identity": {
+          "low": 81403,
+          "high": 0
+        },
+        "labels": [
+          "HashTag"
+        ],
+        "properties": {
+          "tid": "942181001131937792",
+          "hashtag": "MondayMotivation"
+        }
+      },
+      [
+        "967872155349209088",
+        "967879857441988609",
+        "942875862772236288",
+        "967875711225622529",
+        "953778180715773952",
+        "947949208341921793",
+        "947959161936941056",
+        "954138940600082432",
+        "953053770463690752",
+        "954109068204916737",
+        "947964314912145408",
+        "947960908818419712",
+        "954136178998984704",
+        "954139863774724096",
+        "954110532537147392",
+        "947959579366768640"
+      ],
+      {
+        "low": 16,
+        "high": 0
+      }
+    ],
+    "_fieldLookup": {
+      "u": 0,
+      "h": 1,
+      "collect(t.tid)": 2,
+      "count(*)": 3
+    }
+  },
+  {
+    "keys": [
+      "u",
+      "h",
+      "collect(t.tid)",
+      "count(*)"
+    ],
+    "length": 4,
+    "_fields": [
+      {
+        "identity": {
+          "low": 81492,
+          "high": 0
+        },
+        "labels": [
+          "Users"
+        ],
+        "properties": {
+          "author_id": {
+            "low": 1124744869,
+            "high": 0
+          },
+          "author": "Astitva Pandey",
+          "author_screen_name": "astitvapandey3"
+        }
+      },
+      {
+        "identity": {
+          "low": 81403,
+          "high": 0
+        },
+        "labels": [
+          "HashTag"
+        ],
+        "properties": {
+          "tid": "942181001131937792",
+          "hashtag": "MondayMotivation"
+        }
+      },
+      [
+        "967902132450938880",
+        "967901730657599490",
+        "967898930024349696",
+        "967901887620984833",
+        "967902015702540288"
+      ],
+      {
+        "low": 5,
+        "high": 0
+      }
+    ],
+    "_fieldLookup": {
+      "u": 0,
+      "h": 1,
+      "collect(t.tid)": 2,
+      "count(*)": 3
+    }
+  },
+  {
+    "keys": [
+      "u",
+      "h",
+      "collect(t.tid)",
+      "count(*)"
+    ],
+    "length": 4,
+    "_fields": [
+      {
+        "identity": {
+          "low": 81732,
+          "high": 0
+        },
+        "labels": [
+          "Users"
+        ],
+        "properties": {
+          "author_id": {
+            "low": 611512229,
+            "high": 0
+          },
+          "author": "Erick Jongo",
+          "author_screen_name": "ErickJongo"
+        }
+      },
+      {
+        "identity": {
+          "low": 81403,
+          "high": 0
+        },
+        "labels": [
+          "HashTag"
+        ],
+        "properties": {
+          "tid": "942181001131937792",
+          "hashtag": "MondayMotivation"
+        }
+      },
+      [
+        "935659404480847872",
+        "935658753533231105",
+        "935659102096670720",
+        "935296869558661120"
+      ],
+      {
+        "low": 4,
+        "high": 0
+      }
+    ],
+    "_fieldLookup": {
+      "u": 0,
+      "h": 1,
+      "collect(t.tid)": 2,
+      "count(*)": 3
+    }
+  }
+]

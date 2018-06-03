@@ -1,0 +1,9 @@
+8. match (h:HashTag{hashtag:'MondayMotivation'})<-[:HASHTAG]-(t:Tweets)<-[:POSTS]-(u:Users)
+where t.type ='Tweet'
+ return u,h,collect(t.tid),count(*)  order by count(*) desc limit 3
+
+3.
+match (u1:Users)<-[:MENTIONS]-(t:Tweets)-[:MENTIONS]->(u2:Users) where t.location='Intel/Tips Made Drudge 93+ Times' and u1.author_screen_name>u2.author_screen_name
+and t.type='Tweet'
+return u1,u2,t.tid,count(t) order by count(t) desc
+
